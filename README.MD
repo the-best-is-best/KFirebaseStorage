@@ -25,6 +25,29 @@ KFirebaseStorage available on `mavenCentral()`.
 implementation("io.github.the-best-is-best:kfirebase-storage:1.1.0")
 ```
 
+### androidMain
+
+```kotlin
+     AndroidKFirebaseCore.initialization(this)
+```
+
+### iOS (Using Swift Package Manager - SPM)
+
+Make sure to add Firebase as a dependency using Swift Package Manager (SPM) instead of CocoaPods.
+
+1. Open your Xcode project.
+2. Navigate to `File > Add Packages...`.
+3. Enter Firebase repository URL: `https://github.com/firebase/firebase-ios-sdk`
+4. Choose `FirebaseCore` and add it to your project.
+
+### iosApp
+
+```swift
+import Firebase
+
+FirebaseApp.configure()
+```
+
 ## How to use
 
 ```kotlin
