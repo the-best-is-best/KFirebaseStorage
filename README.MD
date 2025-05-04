@@ -1,30 +1,97 @@
-# Compose Multiplatform Application
+<h1 align="center">KFirebaseStorage</h1><br>
 
-## Before running!
+<div align="center">
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+<a href="https://android-arsenal.com/api?level=21" rel="nofollow">
+    <img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat" style="max-width: 100%;">
+</a>
+<img src="https://img.shields.io/badge/Platform-Android-brightgreen.svg?logo=android" alt="Badge Android" />
+  <img src="https://img.shields.io/badge/Platform-iOS%20%2F%20macOS-lightgrey.svg?logo=apple" alt="Badge iOS" />
+  <!-- <img src="https://img.shields.io/badge/Platform-JVM-8A2BE2.svg?logo=openjdk" alt="Badge JVM" />
+    <img src="https://img.shields.io/badge/Platform-WASM%20%2F%20JS-yellow.svg?logo=javascript" alt="Badge JS" /> -->
+<a href="https://github.com/the-best-is-best/"><img alt="Profile" src="https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white" height="20"/></a>
 
-- check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
-- install JDK 17 or higher on your machine
-- add `local.properties` file to the project root and set a path to Android SDK there
+</div>
 
-### Android
+KFirebaseStorage is a Kotlin Multiplatform library designed to streamline the integration of Firebase services in your mobile applications. With this library, developers can effortlessly initialize Firebase for both Android and iOS, enabling a unified and efficient development experience.
 
-To run the application on android device/emulator:
+## Download
 
-- open project in Android Studio and run imported android run configuration
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.the-best-is-best/kfirebase-storage)](https://central.sonatype.com/artifact/io.github.the-best-is-best/kfirebase-storage)
 
-To build the application bundle:
+KFirebaseStorage available on `mavenCentral()`.
 
-- run `./gradlew :composeApp:assembleDebug`
-- find `.apk` file in `composeApp/build/outputs/apk/debug/composeApp-debug.apk`
-  Run android UI tests on the connected device: `./gradlew :composeApp:connectedDebugAndroidTest`
+```kotlin
+implementation("io.github.the-best-is-best:kfirebase-storage:1.1.0")
+```
 
-### iOS
+## How to use
 
-To run the application on iPhone device/simulator:
+```kotlin
+ ElevatedButton(
+            onClick = {
+                scope.launch {
+                    val image = FileKit.openFilePicker(type = FileKitType.Image)
+                    if (image != null) {
+                        val res = firebaseStorage.uploadFile(
+                            "test/${image.name}",
+                            image.readBytes(),
+                        )
+                        res.fold(
+                            onSuccess = {
+                                println("Upload successful: $it")
+                            },
+                            onFailure = {
+                                println("Error: ${it.message}")
+                            }
+                        )
+                    }
+                }
+            }
+        ) {
+            Text("Upload Image")
+        }
+        ElevatedButton(
+            onClick = {
+                scope.launch {
+                    val res = firebaseStorage.getFileBytes("test/IMG_0002.jpeg")
 
-- Open `iosApp/iosApp.xcproject` in Xcode and run standard configuration
-- Or
-  use [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile)
-  for Android Studio
-  Run iOS simulator UI tests: `./gradlew :composeApp:iosSimulatorArm64Test`
+                    res.fold(
+                        onSuccess = {
+                            val path = saveBytes(it, "IMG_0002.jpeg", "test")
+                            try {
+                                openFile(path)
+                            } catch (e: Exception) {
+                                println("Error opening file: ${e.message}")
+                            }
+                        },
+                        onFailure = {
+                            println("Error: ${it.message}")
+                        }
+                    )
 
+                }
+            }
+        ) {
+            Text("Download Image by bytes")
+        }
+
+
+        ElevatedButton(
+            onClick = {
+                scope.launch {
+                    firebaseStorage.deleteFile(
+                        "test/IMG_0002.jpeg",
+                    )
+                }
+            }
+        ) {
+            Text("Delete Image")
+        }
+
+
+
+```
+
+🛡 License
+Licensed under the Apache 2.0 License.
