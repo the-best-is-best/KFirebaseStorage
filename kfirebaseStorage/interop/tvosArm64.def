@@ -1,0 +1,3 @@
+language = Objective-C
+package = io.github.native.kfirebase.storage
+headers = /Users/michelleraouf/Desktop/kmm/KFirebaseStorage/kfirebaseStorage/interop/src/tvos-arm64/FirebaseStorage.framework/Headers/FirebaseStorage-Swift.h
