@@ -3,254 +3,141 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		41200A922DC6B4F900C1A7CF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41200A912DC6B4F900C1A7CF /* FirebaseAnalytics */; };
-		41200A942DC6B4F900C1A7CF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 41200A932DC6B4F900C1A7CF /* FirebaseCore */; };
-		41200A962DC6B4F900C1A7CF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 41200A952DC6B4F900C1A7CF /* FirebaseStorage */; };
-		41200A982DC6B51000C1A7CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41200A972DC6B51000C1A7CF /* GoogleService-Info.plist */; };
-		A93A953B29CC810C00F8E227 /* iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93A953A29CC810C00F8E227 /* iosApp.swift */; };
-		A93A953F29CC810D00F8E227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93A953E29CC810D00F8E227 /* Assets.xcassets */; };
-		A93A954229CC810D00F8E227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93A954129CC810D00F8E227 /* Preview Assets.xcassets */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		41200A972DC6B51000C1A7CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		41200A992DC6BACD00C1A7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41C625372DC78EF100DFB2DE /* KFirebaseStorage.apple.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KFirebaseStorage.apple.kt; sourceTree = "<group>"; };
-		41C6253D2DC78EF100DFB2DE /* FileUploadResult.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileUploadResult.kt; sourceTree = "<group>"; };
-		41C6253E2DC78EF100DFB2DE /* KFirebaseStorage.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = KFirebaseStorage.kt; sourceTree = "<group>"; };
-		A93A953729CC810C00F8E227 /* Demo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A93A953A29CC810C00F8E227 /* iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosApp.swift; sourceTree = "<group>"; };
-		A93A953E29CC810D00F8E227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A93A954129CC810D00F8E227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9DA97B12DC1472C00A4DA20 /* KFirebaseStorageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFirebaseStorageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B99700CA2DC9B8D800C7335B /* Exceptions for "iosApp" folder in "iosApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B9DA97B02DC1472C00A4DA20 /* iosApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B9DA97B32DC1472C00A4DA20 /* iosApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B99700CA2DC9B8D800C7335B /* Exceptions for "iosApp" folder in "iosApp" target */,
+			);
+			path = iosApp;
+			sourceTree = "<group>";
+		};
+		B9DA98002DC14AA900A4DA20 /* Configuration */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		A93A953429CC810C00F8E227 /* Frameworks */ = {
+		B9DA97AE2DC1472C00A4DA20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41200A942DC6B4F900C1A7CF /* FirebaseCore in Frameworks */,
-				41200A922DC6B4F900C1A7CF /* FirebaseAnalytics in Frameworks */,
-				41200A962DC6B4F900C1A7CF /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41C625362DC78E9D00DFB2DE /* Kotlin Debug */ = {
+		B9DA97A82DC1472C00A4DA20 = {
 			isa = PBXGroup;
 			children = (
-				41C6253C2DC78EF100DFB2DE /* appleMain */,
-				41C625432DC78EF100DFB2DE /* commonMain */,
-			);
-			path = "Kotlin Debug";
-			sourceTree = "<group>";
-		};
-		41C625382DC78EF100DFB2DE /* firebase_storage */ = {
-			isa = PBXGroup;
-			children = (
-				41C625372DC78EF100DFB2DE /* KFirebaseStorage.apple.kt */,
-			);
-			path = firebase_storage;
-			sourceTree = "<group>";
-		};
-		41C625392DC78EF100DFB2DE /* github */ = {
-			isa = PBXGroup;
-			children = (
-				41C625382DC78EF100DFB2DE /* firebase_storage */,
-			);
-			path = github;
-			sourceTree = "<group>";
-		};
-		41C6253A2DC78EF100DFB2DE /* io */ = {
-			isa = PBXGroup;
-			children = (
-				41C625392DC78EF100DFB2DE /* github */,
-			);
-			path = io;
-			sourceTree = "<group>";
-		};
-		41C6253B2DC78EF100DFB2DE /* kotlin */ = {
-			isa = PBXGroup;
-			children = (
-				41C6253A2DC78EF100DFB2DE /* io */,
-			);
-			path = kotlin;
-			sourceTree = "<group>";
-		};
-		41C6253C2DC78EF100DFB2DE /* appleMain */ = {
-			isa = PBXGroup;
-			children = (
-				41C6253B2DC78EF100DFB2DE /* kotlin */,
-			);
-			name = appleMain;
-			path = ../kfirebaseStorage/src/appleMain;
-			sourceTree = SOURCE_ROOT;
-		};
-		41C6253F2DC78EF100DFB2DE /* firebase_storage */ = {
-			isa = PBXGroup;
-			children = (
-				41C6253D2DC78EF100DFB2DE /* FileUploadResult.kt */,
-				41C6253E2DC78EF100DFB2DE /* KFirebaseStorage.kt */,
-			);
-			path = firebase_storage;
-			sourceTree = "<group>";
-		};
-		41C625402DC78EF100DFB2DE /* github */ = {
-			isa = PBXGroup;
-			children = (
-				41C6253F2DC78EF100DFB2DE /* firebase_storage */,
-			);
-			path = github;
-			sourceTree = "<group>";
-		};
-		41C625412DC78EF100DFB2DE /* io */ = {
-			isa = PBXGroup;
-			children = (
-				41C625402DC78EF100DFB2DE /* github */,
-			);
-			path = io;
-			sourceTree = "<group>";
-		};
-		41C625422DC78EF100DFB2DE /* kotlin */ = {
-			isa = PBXGroup;
-			children = (
-				41C625412DC78EF100DFB2DE /* io */,
-			);
-			path = kotlin;
-			sourceTree = "<group>";
-		};
-		41C625432DC78EF100DFB2DE /* commonMain */ = {
-			isa = PBXGroup;
-			children = (
-				41C625422DC78EF100DFB2DE /* kotlin */,
-			);
-			name = commonMain;
-			path = ../kfirebaseStorage/src/commonMain;
-			sourceTree = SOURCE_ROOT;
-		};
-		A93A952E29CC810C00F8E227 = {
-			isa = PBXGroup;
-			children = (
-				41C625362DC78E9D00DFB2DE /* Kotlin Debug */,
-				A93A953929CC810C00F8E227 /* iosApp */,
-				A93A953829CC810C00F8E227 /* Products */,
-				C4127409AE3703430489E7BC /* Frameworks */,
+				B9DA98002DC14AA900A4DA20 /* Configuration */,
+				B9DA97B32DC1472C00A4DA20 /* iosApp */,
+				B9DA97B22DC1472C00A4DA20 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A93A953829CC810C00F8E227 /* Products */ = {
+		B9DA97B22DC1472C00A4DA20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A93A953729CC810C00F8E227 /* Demo App.app */,
+				B9DA97B12DC1472C00A4DA20 /* KFirebaseStorageApp.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A93A953929CC810C00F8E227 /* iosApp */ = {
-			isa = PBXGroup;
-			children = (
-				41200A992DC6BACD00C1A7CF /* Info.plist */,
-				41200A972DC6B51000C1A7CF /* GoogleService-Info.plist */,
-				A93A953A29CC810C00F8E227 /* iosApp.swift */,
-				A93A953E29CC810D00F8E227 /* Assets.xcassets */,
-				A93A954029CC810D00F8E227 /* Preview Content */,
-			);
-			path = iosApp;
-			sourceTree = "<group>";
-		};
-		A93A954029CC810D00F8E227 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A93A954129CC810D00F8E227 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C4127409AE3703430489E7BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A93A953629CC810C00F8E227 /* iosApp */ = {
+		B9DA97B02DC1472C00A4DA20 /* iosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A93A954529CC810D00F8E227 /* Build configuration list for PBXNativeTarget "iosApp" */;
+			buildConfigurationList = B9DA97BF2DC1472D00A4DA20 /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
-				A9D80A052AAB5CDE006C8738 /* ShellScript */,
-				A93A953329CC810C00F8E227 /* Sources */,
-				A93A953429CC810C00F8E227 /* Frameworks */,
-				A93A953529CC810C00F8E227 /* Resources */,
+				B9DA97F42DC1497100A4DA20 /* Compile Kotlin Framework */,
+				B9DA97AD2DC1472C00A4DA20 /* Sources */,
+				B9DA97AE2DC1472C00A4DA20 /* Frameworks */,
+				B9DA97AF2DC1472C00A4DA20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				B9DA97B32DC1472C00A4DA20 /* iosApp */,
+			);
 			name = iosApp;
+			packageProductDependencies = (
+			);
 			productName = iosApp;
-			productReference = A93A953729CC810C00F8E227 /* Demo App.app */;
+			productReference = B9DA97B12DC1472C00A4DA20 /* KFirebaseStorageApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A93A952F29CC810C00F8E227 /* Project object */ = {
+		B9DA97A92DC1472C00A4DA20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					A93A953629CC810C00F8E227 = {
-						CreatedOnToolsVersion = 14.2;
+					B9DA97B02DC1472C00A4DA20 = {
+						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = A93A953229CC810C00F8E227 /* Build configuration list for PBXProject "iosApp" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = B9DA97AC2DC1472C00A4DA20 /* Build configuration list for PBXProject "iosApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = A93A952E29CC810C00F8E227;
-			packageReferences = (
-				41200A902DC6B4F900C1A7CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-			);
-			productRefGroup = A93A953829CC810C00F8E227 /* Products */;
+			mainGroup = B9DA97A82DC1472C00A4DA20;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A93A953629CC810C00F8E227 /* iosApp */,
+				B9DA97B02DC1472C00A4DA20 /* iosApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A93A953529CC810C00F8E227 /* Resources */ = {
+		B9DA97AF2DC1472C00A4DA20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A93A954229CC810D00F8E227 /* Preview Assets.xcassets in Resources */,
-				A93A953F29CC810D00F8E227 /* Assets.xcassets in Resources */,
-				41200A982DC6B51000C1A7CF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A9D80A052AAB5CDE006C8738 /* ShellScript */ = {
+		B9DA97F42DC1497100A4DA20 /* Compile Kotlin Framework */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -258,32 +145,33 @@
 			);
 			inputPaths = (
 			);
+			name = "Compile Kotlin Framework";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :composeApp:embedAndSignAppleFrameworkForXcode\n";
+			shellScript = "if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \\\"YES\\\"\"\n  exit 0\nfi\ncd \"$SRCROOT/..\"\n./gradlew :composeApp:embedAndSignAppleFrameworkForXcode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A93A953329CC810C00F8E227 /* Sources */ = {
+		B9DA97AD2DC1472C00A4DA20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A93A953B29CC810C00F8E227 /* iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A93A954329CC810D00F8E227 /* Debug */ = {
+		B9DA97BD2DC1472D00A4DA20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -316,7 +204,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -330,20 +219,22 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		A93A954429CC810D00F8E227 /* Release */ = {
+		B9DA97BE2DC1472D00A4DA20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -376,7 +267,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -384,64 +276,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A93A954629CC810D00F8E227 /* Debug */ = {
+		B9DA97C02DC1472D00A4DA20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B9DA98002DC14AA900A4DA20 /* Configuration */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "${TEAM_ID}";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "fire store";
-				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.kfirebase;
-				PRODUCT_NAME = "Demo App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A93A954729CC810D00F8E227 /* Release */ = {
+		B9DA97C12DC1472D00A4DA20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B9DA98002DC14AA900A4DA20 /* Configuration */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "${TEAM_ID}";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)\n$(SRCROOT)/../composeApp/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "fire store";
-				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.kfirebase;
-				PRODUCT_NAME = "Demo App";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,54 +355,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A93A953229CC810C00F8E227 /* Build configuration list for PBXProject "iosApp" */ = {
+		B9DA97AC2DC1472C00A4DA20 /* Build configuration list for PBXProject "iosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A93A954329CC810D00F8E227 /* Debug */,
-				A93A954429CC810D00F8E227 /* Release */,
+				B9DA97BD2DC1472D00A4DA20 /* Debug */,
+				B9DA97BE2DC1472D00A4DA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A93A954529CC810D00F8E227 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
+		B9DA97BF2DC1472D00A4DA20 /* Build configuration list for PBXNativeTarget "iosApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A93A954629CC810D00F8E227 /* Debug */,
-				A93A954729CC810D00F8E227 /* Release */,
+				B9DA97C02DC1472D00A4DA20 /* Debug */,
+				B9DA97C12DC1472D00A4DA20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		41200A902DC6B4F900C1A7CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 11.12.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		41200A912DC6B4F900C1A7CF /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41200A902DC6B4F900C1A7CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		41200A932DC6B4F900C1A7CF /* FirebaseCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41200A902DC6B4F900C1A7CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCore;
-		};
-		41200A952DC6B4F900C1A7CF /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41200A902DC6B4F900C1A7CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A93A952F29CC810C00F8E227 /* Project object */;
+	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }

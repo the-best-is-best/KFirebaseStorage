@@ -30,7 +30,6 @@ actual class KFirebaseStorage {
     private val storage = FIRStorage.storage()
 
 
-    @OptIn(UnsafeNumber::class, BetaInteropApi::class)
     actual suspend fun uploadFile(
         filePath: String,
         fileData: ByteArray,
