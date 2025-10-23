@@ -32,7 +32,7 @@ tasks.withType<PublishToMavenRepository> {
 extra["packageNameSpace"] = "io.github.kfirebaseStorage"
 extra["groupId"] = "io.github.the-best-is-best"
 extra["artifactId"] = "kfirebase-storage"
-extra["version"] = "2.0.0"
+extra["version"] = "2.1.0"
 extra["packageName"] = "KFirebaseStorage"
 extra["packageUrl"] = "https://github.com/the-best-is-best/KFirebaseStorage"
 extra["packageDescription"] =
@@ -99,8 +99,8 @@ kotlin {
 // See: https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
     androidLibrary {
         namespace = "io.github.firebase_storage"
-        compileSdk = 36
-        minSdk = 23
+        compileSdk = libs.versions.android.compileSdk.get().toInt()
+        minSdk = libs.versions.android.minSdk.get().toInt()
 
     }
 

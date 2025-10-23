@@ -22,7 +22,7 @@ KFirebaseStorage is a Kotlin Multiplatform library designed to streamline the in
 KFirebaseStorage available on `mavenCentral()`.
 
 ```kotlin
-implementation("io.github.the-best-is-best:kfirebase-storage:1.1.0")
+implementation("io.github.the-best-is-best:kfirebase-storage:2.1.0")
 ```
 
 ## Version Compatibility
