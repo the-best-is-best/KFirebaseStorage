@@ -178,11 +178,11 @@ kotlin {
             }
         }
 
-        commonTest {
-            dependencies {
-                implementation(libs.kotlin.test)
-            }
-        }
+//        commonTest {
+//            dependencies {
+//                implementation(libs.kotlin.test)
+//            }
+//        }
 
         androidMain {
             dependencies {

@@ -26,9 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * NSString typedef representing a task listener handle.
  */
-typedef NSString
-*
-FIRStorageHandle NS_SWIFT_NAME(StorageHandle);
+typedef NSString *FIRStorageHandle NS_SWIFT_NAME(StorageHandle);
 
 /**
  * Block typedef typically used when downloading data.

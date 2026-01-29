@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		418D26642F2BDBFD005034DF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 418D26632F2BDBFD005034DF /* FirebaseCore */; };
+		418D26662F2BDBFD005034DF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 418D26652F2BDBFD005034DF /* FirebaseStorage */; };
+		418D266B2F2BDFC2005034DF /* KDownloadFileInterop in Frameworks */ = {isa = PBXBuildFile; productRef = 418D266A2F2BDFC2005034DF /* KDownloadFileInterop */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B9DA97B12DC1472C00A4DA20 /* KFirebaseStorageApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFirebaseStorageApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -41,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418D26642F2BDBFD005034DF /* FirebaseCore in Frameworks */,
+				418D266B2F2BDFC2005034DF /* KDownloadFileInterop in Frameworks */,
+				418D26662F2BDBFD005034DF /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,9 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
+				418D26632F2BDBFD005034DF /* FirebaseCore */,
+				418D26652F2BDBFD005034DF /* FirebaseStorage */,
+				418D266A2F2BDFC2005034DF /* KDownloadFileInterop */,
 			);
 			productName = iosApp;
 			productReference = B9DA97B12DC1472C00A4DA20 /* KFirebaseStorageApp.app */;
@@ -114,6 +126,10 @@
 			);
 			mainGroup = B9DA97A82DC1472C00A4DA20;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				418D26622F2BDBFD005034DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				418D26692F2BDFC2005034DF /* XCRemoteSwiftPackageReference "KDownloadFileInterop" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DA97B22DC1472C00A4DA20 /* Products */;
 			projectDirPath = "";
@@ -309,10 +325,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kfirebase;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,10 +360,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kfirebase;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,6 +394,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		418D26622F2BDBFD005034DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		418D26692F2BDFC2005034DF /* XCRemoteSwiftPackageReference "KDownloadFileInterop" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/the-best-is-best/KDownloadFileInterop";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		418D26632F2BDBFD005034DF /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 418D26622F2BDBFD005034DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		418D26652F2BDBFD005034DF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 418D26622F2BDBFD005034DF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		418D266A2F2BDFC2005034DF /* KDownloadFileInterop */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 418D26692F2BDFC2005034DF /* XCRemoteSwiftPackageReference "KDownloadFileInterop" */;
+			productName = KDownloadFileInterop;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DA97A92DC1472C00A4DA20 /* Project object */;
 }
