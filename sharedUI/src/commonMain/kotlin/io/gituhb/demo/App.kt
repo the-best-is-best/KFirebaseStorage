@@ -31,7 +31,7 @@ import kotlinx.coroutines.launch
 
 @Preview
 @Composable
-internal fun App() = AppTheme {
+fun App() = AppTheme {
     val firebaseStorage = KFirebaseStorage()
     val scope = rememberCoroutineScope()
 
