@@ -29,7 +29,7 @@ uiToolingPreview = "1.10.0"
 urlencoderLib = "1.6.0"
 #runner = "1.7.0"
 core = "1.7.0"
-firebaseBom = "34.4.0"
+firebaseBom = "34.8.0"
 
 [libraries]
 components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "componentsResources" }
