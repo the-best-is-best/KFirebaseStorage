@@ -24,7 +24,7 @@ import platform.posix.memcpy
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
-@OptIn(ExperimentalForeignApi::class)
+@OptIn(ExperimentalForeignApi::class, BetaInteropApi::class)
 actual class KFirebaseStorage {
 
     private val storage = FIRStorage.storage()

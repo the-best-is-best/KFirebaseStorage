@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.github.firebase_storage.KFirebaseStorage
 import io.github.kdownloadfile.openFile
@@ -27,7 +28,6 @@ import io.github.vinceglb.filekit.readBytes
 import io.github.vinceglb.filekit.write
 import io.gituhb.demo.theme.AppTheme
 import kotlinx.coroutines.launch
-import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Preview
 @Composable
